@@ -1,4 +1,4 @@
-baseURL = "https://github.com/GWJ-git/GWJ-git.github.io"
+baseURL = "https://example.com"
 title   = "Hello Friend NG"
 languageCode = "en-us"
 theme = "hello-friend-ng"
@@ -18,7 +18,7 @@ archetypeDir = "archetypes"
 contentDir   = "content"
 dataDir      = "data"
 layoutDir    = "layouts"
-publishDir   = "docs"
+publishDir   = "public"
 
 buildDrafts  = false
 buildFuture  = false
