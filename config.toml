@@ -1,10 +1,11 @@
-baseURL = "https://example.com"
+baseURL = "https://github.com/GWJ-git/GWJ-git.github.io"
 title   = "Hello Friend NG"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
+pygmentsOptions = "linenos=false" # true, false, table, inline
 
 paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
@@ -37,7 +38,7 @@ disableHugoGeneratorInject = false
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Jane Doe"
+  name = "GWJ"
 
 [blackfriday]
   hrefTargetBlank = true
