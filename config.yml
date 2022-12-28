@@ -1,0 +1,128 @@
+baseURL: https://gwj-git.github.io
+title: G-Code
+languageCode: zh
+theme: PaperMod
+enableInlineShortcodes: true
+enableEmoji: true
+enableRobotsTXT: true
+hasCJKLanguage: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+paginate: 15
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: true
+pygmentsUseClasses: true
+minify:
+  disableXML: true
+permalinks:
+  posts: /文章/:title/
+languages:
+  zh:
+    languageName: 中文
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - identifier: home
+          name: 🏠主页
+          url: /
+          weight: 1
+        - identifier: search
+          name: 🔍搜索
+          url: search/
+          weight: 2
+        - name: ⏱时间轴
+          url: archives
+          weight: 3
+        - name: 🏷️标签
+          url: tags/
+          weight: 4
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+params:
+  env: production
+  description: Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod
+  author: G-Code
+  defaultTheme: auto
+  DateFormat: 2006-01-02
+  ShowShareButtons: true
+  ShowReadingTime: false
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true # 显示目录
+  TocOpen: true # 自动展开目录
+  images:
+    - papermod-cover.png
+  profileMode:
+    enabled: false
+    title: PaperMod
+    imageUrl: "#"
+    imageTitle: my image
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+  homeInfoParams:
+    Title: G-Code 个人博客
+    Content: >
+        💪个人学习使用，记录分享✊
+
+        - 🌟相信**奇迹**的人，本身和**奇迹**一样了不起🌟
+
+        - 🌈真正的努力，都不喧嚣📖
+  socialIcons:
+    - name: github
+      url: https://github.com/adityatelange/hugo-PaperMod
+  assets:
+    disableHLJS: true
+  
+  fuseOpts: # 搜索配置
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: [ "title", "permalink", "summary" ]
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    # lineNos: true
+    noClasses: true
+    tabWidth: 4
+    style: monokai
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
