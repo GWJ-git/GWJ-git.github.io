@@ -1,18 +1,17 @@
 ---
 title: npm相关学习
-date: 2022-09-22T20:39:10+08:00
+date: 2022-10-20T20:39:10+08:00
 draft: false
 toc: true
 images: null
 categories:
   - 学习笔记
 tags:
-  - node
   - npm
   - '学习笔记'
 slug: ''
 ---
-# node&npm 生态
+# npm 生态
 
 
 ## npm,cnpm,yarn,pnpm

@@ -1,6 +1,6 @@
 ---
 title: '[译]执行上下文'
-date: 2022-09-22T20:39:10+08:00
+date: 2022-09-30T20:39:10+08:00
 draft: false
 toc: true
 images: null
@@ -57,7 +57,7 @@ first();
 console.log('Inside Global Execution Context');
 ```
 
-![1_ACtBy8CIepVTOSYcVwZ34Q](F:\阶段\图片\1_ACtBy8CIepVTOSYcVwZ34Q.webp)
+![1_ACtBy8CIepVTOSYcVwZ34Q](https://gitee.com/gong-weijie/pic/raw/master/pic/1_ACtBy8CIepVTOSYcVwZ34Q.webp)
 
 global =>first(执行中调用second)=>second(执行完弹出)=>first(执行完弹出)=> global（执行console）
 
@@ -340,3 +340,20 @@ VariableEnvironment: {
 这就是我们说的提升（`hoisting`）
 
 注意：在执行阶段，如果 JavaScript 引擎无法在源代码中声明的实际位置找到 let 变量的值，那么它将为其赋予未定义的值。
+
+原文结束
+
+
+执行 Javascript 代码的一个环境的抽象概念，
+
+js引擎第一次遇见脚本时会创建一个全局执行上下文并压入执行栈。执行中遇见函数会创建函数执行上下文并压入栈中，执行完会弹出。
+
+执行上下文的创建分为创建和执行两个阶段。
+
+创建阶段会创建词法环境和变量环境两个组件，两个组件都由环境记录，外部环境引用和this绑定三部分组成，其中词法环境的环境记录存储函数声明和变量`let，const`,而变量环境仅存储变量`var`。
+
+函数执行上下文词法环境的环境记录是声明型，存储变量和函数声明，和一个arguments对象。全局执行上下文的词法环境包含一个对象型的环境记录，除了存储变量和函数声明外，还有一个全局绑定对象（window）。
+
+外部环境引用使执行上下文可以访问外部词法环境。this绑定，全局执行上下文的`this`指向全局对象window对象，而函数执行上下文的`this`取决于如何调用函数。
+
+然后是执行阶段，分配变量，执行代码。

@@ -53,7 +53,7 @@ params:
   author: G-Code
   defaultTheme: auto
   DateFormat: 2006-01-02
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: false
   displayFullLangName: true
   ShowPostNavLinks: true
@@ -83,8 +83,10 @@ params:
 
         - 🌈真正的努力，都不喧嚣📖
   socialIcons:
+    - name: csdn
+      url: https://blog.csdn.net/Pikachu_magical?type=blog
     - name: github
-      url: https://github.com/adityatelange/hugo-PaperMod
+      url: https://github.com/GWJ-git
   assets:
     disableHLJS: true
   
